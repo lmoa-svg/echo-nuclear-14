@@ -4601,3 +4601,10 @@ Entries:
   id: 5834
   time: '2026-05-05T21:31:54.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/432
+- author: Torma25 on discord for the idea
+  changes:
+    - type: Add
+      message: bloatfly milk
+  id: 5835
+  time: '2026-05-05T21:32:44.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/430
