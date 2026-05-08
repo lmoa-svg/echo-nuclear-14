@@ -4674,3 +4674,16 @@ Entries:
   id: 5843
   time: '2026-05-07T23:49:56.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/446
+- author: Bradysgaming
+  changes:
+    - type: Tweak
+      message: 'Lowerd reflect chance for C-27 Heavy armor drastically '
+    - type: Tweak
+      message: >-
+        Reduced reflect chance and durabillity for certain often used shields
+        that are VERY cheap
+    - type: Tweak
+      message: Made C-27 Heavy armor 5% slower.
+  id: 5844
+  time: '2026-05-08T17:02:07.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/449
