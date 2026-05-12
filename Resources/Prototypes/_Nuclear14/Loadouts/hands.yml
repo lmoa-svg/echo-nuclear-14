@@ -112,13 +112,10 @@
 
 
 - type: loadout
-  id: N14GoliathFistCent
+  id: N14GoliathFist
   category: Hands
-  cost: 3
+  cost: 4
   requirements:
-    - !type:CharacterJobRequirement
-      jobs:
-      - CaesarLegionCenturion
     - !type:CharacterItemGroupRequirement
       group: N14LoadoutHands
   items:
