@@ -5008,3 +5008,10 @@ Entries:
   id: 5876
   time: '2026-05-13T02:39:20.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/500
+- author: NajaTheNaja
+  changes:
+    - type: Tweak
+      message: changed gutsy bullet type
+  id: 5877
+  time: '2026-05-13T03:01:21.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/501
