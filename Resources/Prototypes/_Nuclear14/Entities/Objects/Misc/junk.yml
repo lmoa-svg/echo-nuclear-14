@@ -107,6 +107,8 @@
   - type: PhysicalComposition
     materialComposition:
       Plastic: 50
+  - type: Item
+    storedRotation: 90
 
 - type: entity
   parent: N14JunkItemBase
@@ -380,6 +382,7 @@
   - type: Tag
     tags:
     - JunkKettle
+
 - type: entity
   parent: N14JunkItemBasePlastic
   id: N14JunkTimer
@@ -798,9 +801,17 @@
   components:
   - type: Tag # Corvax-Change
     tags:
+    # Misfits Change: Make N14 Capacitors compatible with the other capacitors and vice versa
+    - CapacitorStockPart
     - N14Capacitor
     - JunkItem
     - Trash
+  - type: MachinePart
+    part: Capacitor
+    rating: 1
+  - type: ReverseEngineering # Nyano
+    recipes:
+      - CapacitorStockPart
   - type: Sprite
     state: capacitor_1
 
@@ -865,6 +876,9 @@
   - type: Tag
     tags:
     - Mainboard
+  - type: Item
+    size: Small
+    storedRotation: 90
 
 - type: entity
   parent: N14JunkComponentElectronic
@@ -940,6 +954,8 @@
   - type: PhysicalComposition
     materialComposition:
       Circuitry: 20
+  - type: Item
+    size: Tiny
 
 - type: entity
   parent: N14JunkComponentElectronic
@@ -986,6 +1002,8 @@
     - JunkItem
     - Trash
     - Screw
+  - type: Item
+    size: Tiny
 
 - type: entity
   parent: N14JunkComponentElectronic
@@ -998,6 +1016,9 @@
   - type: Tag
     tags:
     - Sensor
+  - type: Item
+    size: Small
+    storedRotation: 90
 
 - type: entity
   parent: N14JunkComponentElectronic
@@ -1012,7 +1033,7 @@
     - SensorModule
 
 - type: entity
-  parent: N14JunkItemBasePlastic
+  parent: N14JunkComponentElectronic
   id: N14JunkComponentSwitch
   name: switch module #Misfits Change: Why was this called a sensor module if its a switch??
   description: An electronics switch.
