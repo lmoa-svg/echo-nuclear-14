@@ -1,0 +1,33 @@
+﻿# tools
+
+- type: entity
+  id: MisfitsClosetGenericMechanic
+  suffix: Filled, Mechanical
+  parent: N14ClosetGeneric
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingHeadHatHardhatYellowDark
+    - id: ToolboxMechanicalFilled
+    - id: ToolboxElectricalFilled
+    - id: ClothingOuterVestHazard
+    - id: ClothingShoesBootsWork
+    - id: ClothingHandsGlovesColorYellow
+    - id: N14FuelTankHandyRusty
+
+# edit here later
+
+- type: entity
+  id: MisfitsClosetSafeSpinner
+  suffix: Filled, Mechanical
+  parent: N14ClosetSafeSpinner
+  components:
+  - type: StorageFill
+    contents:
+    - id: N14Paper
+    - id: SheetSteel10
+    - id: ToolboxElectricalFilled
+    - id: ClothingOuterVestHazard
+    - id: ClothingShoesBootsWork
+    - id: ClothingHandsGlovesColorYellow
+    - id: N14FuelTankHandyRusty

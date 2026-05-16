@@ -1,0 +1,87 @@
+﻿# surgery real
+
+- type: entity
+  id: MisfitsCrateMedicalSurgery
+  suffix: Filled, Medical, Surgery
+  parent: N14CrateMedical
+  components:
+  - type: StorageFill
+    contents:
+    - id: NitrousOxideTankFilled
+    - id: ClothingMaskBreathMedicalSecurity
+    - id: BoxNitrileGloves
+    - id: BoxSterileMask
+    - id: ClothingBackpackDuffelSurgeryFilled
+    - id: PowerCellSmall
+    - id: N14JunkAbraxoCleaner
+    - id: SurgicalSterileWipe
+    - id: SurgicalSterilanSpray
+    - id: BoxBodyBag
+
+- type: entity
+  id: MisfitsShelfWoodClothesRackMedicalSurgery
+  suffix: Filled, Medical, Surgery
+  parent: N14ShelfWoodClothesRack # unsure about it being a clothes rack, might make mapping it harder
+  components:
+  - type: StorageFill
+    contents:
+    - id: BoxNitrileGloves
+    - id: BoxSterileMask
+    - id: UniformScrubsColorBlue
+    - id: ClothingHeadHatSurgcapBlue
+    - id: UniformScrubsColorGreen
+    - id: ClothingHeadHatSurgcapGreen
+    - id: UniformScrubsColorCyan
+    - id: ClothingHeadHatSurgcapCyan
+    - id: UniformScrubsColorPurple
+    - id: ClothingHeadHatSurgcapPurple
+    - id: ClothingOuterHospitalGown
+      amount: 3
+
+# topicals
+
+- type: entity
+  id: MisfitsShelfMetalMedsMedicalTopical
+  suffix: Filled, Medical, Topical
+  parent: N14ShelfMetalMeds
+  components:
+  - type: StorageFill # i love randomness, give me loot
+    contents:
+    - id: N14Ointment10
+      prob: 0.5
+    - id: N14Ointment10
+      prob: 0.5
+    - id: N14Ointment10
+      prob: 0.5
+    - id: N14Ointment10
+      prob: 0.5
+    - id: N14CleanGauze10
+      prob: 0.5
+    - id: N14CleanGauze10
+      prob: 0.5
+    - id: N14CleanGauze10
+      prob: 0.5
+    - id: N14CleanGauze10
+      prob: 0.5
+    - id: N14CleanGauze10
+      prob: 0.5
+    - id: Bloodpack
+      prob: 0.5
+    - id: Bloodpack
+      prob: 0.5
+    - id: Bloodpack
+      prob: 0.5
+    - id: Bloodpack
+      prob: 0.5
+    - id: Brutepack
+      prob: 0.5
+    - id: Brutepack
+      prob: 0.5
+    - id: N14AloeSalve
+      prob: 0.5
+    - id: N14AloeSalve
+      prob: 0.5
+    - id: N14AloeSalve
+      prob: 0.5
+    - id: N14AloeSalve
+      prob: 0.5
