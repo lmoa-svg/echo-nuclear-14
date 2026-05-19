@@ -287,6 +287,31 @@ undecided-loadout-category-misfits-centurion-armor-ranger-hunter-description =
     Paired with a refit NCR ranger helmet bearing the Legion bull.
     High bullet/fire/bio resistance. Weak against energy and melee.
 
+undecided-loadout-category-misfits-centurion-armor-warforged-name = Centurion Armor: Warforged
+undecided-loadout-category-misfits-centurion-armor-warforged-description =
+    Armor used by Centurions who have seen countless battles, and lived to tell the tale.
+    Paired with a matching helmet. High overall durability from veteran experience.
+
+undecided-loadout-category-misfits-centurion-armor-warlord-name = Centurion Armor: Warlord
+undecided-loadout-category-misfits-centurion-armor-warlord-description =
+    Armor for a Centurion who has single-handedly won wars.
+    Paired with a matching helmet. Extremely high protection and prestige.
+
+undecided-loadout-category-misfits-centurion-armor-cinder-name = Centurion Armor: Cinder
+undecided-loadout-category-misfits-centurion-armor-cinder-description =
+    Armor forged in the ashes of fallen legionnaires.
+    Paired with a matching helmet. Carries the weight of sacrificed warriors.
+
+undecided-loadout-category-misfits-centurion-armor-salt-column-name = Centurion Armor: Salt Column
+undecided-loadout-category-misfits-centurion-armor-salt-column-description =
+    Armor made for the Centurion of the Salt Column.
+    Paired with a matching helmet. Unique regimental pattern and decorations.
+
+undecided-loadout-category-misfits-centurion-armor-unbroken-name = Centurion Armor: Unbroken
+undecided-loadout-category-misfits-centurion-armor-unbroken-description =
+    Armor for a Centurion who refuses to stay dead.
+    Paired with a matching helmet. Reinforced and patched from countless battles.
+
 undecided-loadout-category-corvax-venator-marksman-name = Venator Marksman
 undecided-loadout-category-corvax-venator-marksman-description =
     Includes a .308 sniper rifle, a rope belt,
