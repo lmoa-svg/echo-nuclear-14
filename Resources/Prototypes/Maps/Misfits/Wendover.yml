@@ -28,16 +28,17 @@
         overflowJobs:
         - Wastelander
         availableJobs:
-          SuperMutantFollowerDoctor: [ 0, 1 ] # #Misfits Add: FOTA-aligned supermutant Doctor latejoin slot.
+          SuperMutantEnclave : [ 0, 1 ] # #Misfits Add - Enclave-aligned supermutant latejoin slot.
+          SuperMutantFollowerDoctor: [ 1, 1 ] # #Misfits Add: FOTA-aligned supermutant.
           Wastelander: [ -1, -1 ]
-          SuperMutant: [ 0, 3 ] # #Misfits Change /Fix/: make the FEV Mutant role available for mid-round joins.
-          SuperMutantGladiator: [ 0, 1 ] # #Misfits Add: Gladiator variant latejoin slot.
-          SuperMutantNCRRanger: [ 0, 1 ] # #Misfits Add: NCR Ranger variant latejoin slot.
-          SuperMutantNCRTrooper: [ 0, 1 ] # #Misfits Add: NCR Trooper variant latejoin slot.
-          SuperMutantTribal: [ 0, 1 ] # #Misfits Add: Tribal variant latejoin slot.
-          C27: [ 0, 2 ]    # #Misfits Add - C-27 Generic latejoin slot (whitelist gates actual access)/// Increased to 2 from 1.
-          C27NCR: [ 0, 1 ] # #Misfits Add - C-27 NCR variant latejoin slot.
-          C27BoS: [ 0, 1 ] # #Misfits Add - C-27 Brotherhood variant latejoin slot.
+          SuperMutant: [ 3, 3 ] # #Misfits Change /Fix/: make the FEV Mutant role available for mid-round joins.
+          SuperMutantGladiator: [ 1, 1 ] # #Misfits Add: Gladiator variant.
+          SuperMutantNCRRanger: [ 1, 1 ] # #Misfits Add: NCR Ranger variant.
+          SuperMutantNCRTrooper: [ 1, 1 ] # #Misfits Add: NCR Trooper variant.
+          SuperMutantTribal: [ 1, 1 ] # #Misfits Add: Tribal variant.
+          C27: [ 2, 2 ]    # #Misfits Add - C-27 Generic slot (whitelist gates actual access)/// Increased to 2 from 1.
+          C27NCR: [ 1, 1 ] # #Misfits Add - C-27 NCR variant.
+          C27BoS: [ 1, 1 ] # #Misfits Add - C-27 Brotherhood variant.
           # WastelandScavenger: [ 3, 5 ]
           WastelandReporter: [ 1, 2 ]
           # WastelandMusician: [ 2, 3 ]
@@ -77,6 +78,9 @@
           NCRCadet: [ 6, 6 ]
           NCRPisoner : [ 2, 2 ]
           NCRMPinvestigator : [ 1, 1 ]
+          NCRMilitaryPoliceSergeant: [ 1, 1 ]
+          NCRMilitaryPoliceRecruit: [ 2, 2 ]
+          NCRMilitaryPoliceCaptain: [ 1, 1 ]
           # CaravanLeader: [ 1, 1 ]
           # CaravanTrader: [ 1, 1 ]
           # CaravanGuard: [ 2, 2 ]
@@ -100,10 +104,10 @@
           BoSInitiate: [ 3, 3 ]  #Misfits Change /Add/
           # BoSWashingtonInitiate: [ 3, 3 ] #Misfits Change /Comment-out/: Washington BoS removed
           Overseer: [ 1, 1 ]
-          VaultDoctor: [ 2, 2 ]
-          VaultDweller: [ 4, 4 ]
-          VaultEngineer: [ 1, 1 ]
-          VaultSecurity: [ 2, 2 ]
+          VaultDoctor: [ 2, 3 ]
+          VaultDweller: [ 8, 10 ]
+          VaultEngineer: [ 2, 3 ]
+          VaultSecurity: [ 2, 5 ]
           CaesarLegionLegate: [ 1, 0 ] # Forge-Legion # #Misfits Tweak - 0 active slots (admin-notify role)
           CaesarLegionCenturion: [ 1, 1 ] # Forge-Legion
           CaesarLegionVeteranDecanus: [ 1, 1 ] # Forge-Legion
@@ -134,7 +138,7 @@
           # WhiteLegsPainMaker: [ 0, 0 ] # #Misfits Change - legacy hidden rank removed from join rotation; WhiteLegs now covers the visible tribal entry slot.
           FollowerVolunteer: [ 2, 2 ] # #Misfits Change - Followers job replaced by ranked hierarchy
           FollowerDoctor: [ 1, 1 ]   # #Misfits Add - Doctor rank slot
-          FollowerHead: [ 0, 1 ]     # #Misfits Add - Head rank slot (0 min so server doesn't require one)
+          FollowerHead: [ 1, 1 ]     # #Misfits Fix - allow Head to round-start as well as latejoin
           SyntheticMrHandy: [ 1, 3 ]
           SyntheticProtectron: [ 1, 3 ]
           SyntheticMrGutsy: [ 1, 3 ]
@@ -151,6 +155,3 @@
           EnclaveHeadScientist: [ 1, 1 ]
           EnclaveScientist: [ 2, 2 ]
           EnclaveJuniorScientist: [ 2, 2 ]
-          NCRMilitaryPoliceSergeant: [ 0, 0 ]
-          NCRMilitaryPoliceRecruit: [ 0, 0 ]
-          NCRMilitaryPoliceCaptain: [ 0, 0 ]

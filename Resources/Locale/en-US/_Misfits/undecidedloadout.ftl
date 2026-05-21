@@ -254,8 +254,8 @@ undecided-loadout-category-corvax-legate-imperator-description =
 
 undecided-loadout-category-corvax-centurion-command-name = Centurion Command
 undecided-loadout-category-corvax-centurion-command-description =
-    Includes a lever shotgun, a Legion shield, a rope belt,
-    a box of 20 gauge ammo, 2 bolas, a handcuff box,
+    Includes a Marksman rifle, a Legion shield, a rope belt,
+    3 magazines of 7.62, 2 bolas, a handcuff box,
     2 healing poultice, 2 K rations, and a ceramic flask.
 
 undecided-loadout-category-corvax-centurion-marksman-name = Centurion Marksman
@@ -266,7 +266,7 @@ undecided-loadout-category-corvax-centurion-marksman-description =
 
 undecided-loadout-category-corvax-centurion-vanquisher-name = Centurion Vanquisher
 undecided-loadout-category-corvax-centurion-vanquisher-description =
-    Includes a sledgehammer, a rope belt, 3 throwing knives,
+    Includes a sledgehammer, a rope belt, an Assault Carbine, 4 mags of 5.56,
     2 healing pooultice, 2 K rations, and a ceramic flask.
 
 # #Misfits Add - Centurion armor selection kit locale strings (for LegionCenturionArmorloadoutkits)

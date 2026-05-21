@@ -56,7 +56,7 @@
           path: /Audio/Machines/AI/borg_death.ogg
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 1000
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -176,7 +176,7 @@
     slots:
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellHyper
+        startingItem: PowerCellAntiqueProto
 
 - type: entity
   parent: N14BasePlayerSynthetic
@@ -270,7 +270,7 @@
     slots:
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellHyper
+        startingItem: PowerCellAntiqueProto
 
 - type: entity
   parent: N14BasePlayerSynthetic
@@ -364,7 +364,7 @@
     slots:
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellHyper
+        startingItem: PowerCellAntiqueProto
 
 - type: entity
   parent: N14PlayerSyntheticProtectron
