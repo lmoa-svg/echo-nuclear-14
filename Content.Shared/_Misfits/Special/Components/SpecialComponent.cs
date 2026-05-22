@@ -53,4 +53,7 @@ public sealed partial class SpecialComponent : Component
 
     [DataField]
     public float AppliedStaminaCritThresholdModifier;
+
+    [DataField]
+    public float AppliedHealthThresholdModifier;
 }

@@ -26,8 +26,13 @@ public sealed class SpecialPerceptionSystem : EntitySystem
             return;
 
         var tuning = _special.GetTuning();
-        var delta = _special.GetCurvedEffectDelta(holder, SpecialStat.Perception, special);
-        var keepFraction = Math.Clamp(1.0 - delta * tuning.PerceptionSpreadReductionPerPoint, 0.5, 2.0);
+        var modifier = _special.GetCurvedEffectScale(
+            holder,
+            SpecialStat.Perception,
+            tuning.PerceptionSpreadPenaltyAtOne,
+            -tuning.PerceptionSpreadReductionAtTen,
+            special);
+        var keepFraction = Math.Clamp(1.0 + modifier, 0.5, 2.0);
 
         args.MinAngle = new Angle((double) args.MinAngle * keepFraction);
         args.MaxAngle = new Angle((double) args.MaxAngle * keepFraction);

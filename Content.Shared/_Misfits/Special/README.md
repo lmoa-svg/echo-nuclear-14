@@ -8,6 +8,7 @@ Runtime systems should query `SharedSpecialSystem` instead of reading fields dir
 - `GetModifier(entity, stat)` for temporary modifier totals.
 - `GetEffective(entity, stat)` for gameplay-safe values clamped to 1-10.
 - `GetCurvedEffectDelta(entity, stat)` for gameplay effects that should scale non-linearly around 5.
+- `GetCurvedEffectScale(entity, stat, valueAtOne, valueAtTen)` for effects that should hit exact endpoints at 1 and 10.
 - `HasRequirement(entity, stat, minimum)` for perks, weapons, or future skill gates.
 - `TryModifyTemporary(entity, stat, modifier, duration, source)` for drugs, chems, injuries, perks, or equipment.
 
@@ -26,12 +27,12 @@ Most gameplay effects use a curved delta from the effective stat instead of a fl
 - 9: +5.5
 - 10: +7.5
 
-The tuning values below are multiplied by that curved delta:
+The tuning values below are multiplied by that curved delta or scaled to explicit 1/10 endpoints:
 
 - Strength changes melee damage by `strengthMeleeDamageMultiplierPerPoint`.
-- Perception changes ranged spread/recoil by `perceptionSpreadReductionPerPoint`.
-- Endurance changes stamina crit threshold by `enduranceStaminaCritThresholdPerPoint`.
+- Perception changes ranged spread/recoil from `perceptionSpreadPenaltyAtOne` at 1 PER to `perceptionSpreadReductionAtTen` at 10 PER.
+- Endurance changes health thresholds from `enduranceHealthPenaltyAtOne` at 1 END to `enduranceHealthBonusAtTen` at 10 END.
 - Charisma changes character-creation loadout points by the curved delta times 2, rounded away from zero.
 - Intelligence changes crafting delay on a fixed curve: 1 blocks hand crafting, 5 is normal speed, 9 is 80% faster, and 10 is instant only for lathe production. Hand construction keeps a small nonzero delay floor.
-- Agility changes movement speed by `agilityMovementSpeedMultiplierPerPoint`.
+- Agility changes movement speed from `agilityMovementSpeedPenaltyAtOne` at 1 AGI to `agilityMovementSpeedBonusAtTen` at 10 AGI.
 - Luck changes critical-hit and lucky-scavenge chance.

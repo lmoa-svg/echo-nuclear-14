@@ -126,6 +126,27 @@ public sealed class SharedSpecialSystem : EntitySystem
         };
     }
 
+    public float GetCurvedEffectScale(
+        EntityUid uid,
+        SpecialStat stat,
+        float valueAtOne,
+        float valueAtTen,
+        SpecialComponent? component = null)
+    {
+        return GetCurvedEffectScale(GetCurvedEffectDelta(uid, stat, component), valueAtOne, valueAtTen);
+    }
+
+    public static float GetCurvedEffectScale(float curvedDelta, float valueAtOne, float valueAtTen)
+    {
+        if (curvedDelta > 0f)
+            return valueAtTen * curvedDelta / GetCurvedEffectDelta(SpecialProfile.Maximum);
+
+        if (curvedDelta < 0f)
+            return valueAtOne * curvedDelta / GetCurvedEffectDelta(SpecialProfile.Minimum);
+
+        return 0f;
+    }
+
     public static int GetCharismaLoadoutPointModifier(int charisma)
     {
         return (int) Math.Round(GetCurvedEffectDelta(charisma) * 2f, MidpointRounding.AwayFromZero);
