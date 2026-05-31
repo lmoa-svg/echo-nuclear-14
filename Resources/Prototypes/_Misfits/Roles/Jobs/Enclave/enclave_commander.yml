@@ -18,7 +18,6 @@
       species:
       - Human
       - Ghoul
-      - SuperMutant
     - !type:CharacterDepartmentTimeRequirement # #Misfits Tweak - T7 faction timelock (40h Enclave)
       department: Enclave
       min: 144000 # 40 hours
@@ -26,7 +25,7 @@
       tracker: EnclaveSeniorOfficer
       min: 43200 # 12 hours
   startingGear: EnclaveCommanderGear
-  icon: "JobIconHeadOfSecurity"
+  icon: "JobIconEnclaveCommander"
   supervisors: job-supervisors-enclave-commander
   requireAdminNotify: true
   alwaysUseSpawner: true
